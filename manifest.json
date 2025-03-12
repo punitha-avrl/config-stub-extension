@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Call-IA Config Stub",
+  "description": "Sends notifications when tree added to the list",
+  "version": "1.0",
+  "icons": {
+    "48": "assets/letter-c.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "48": "assets/letter-c.png"
+    }
+  },
+  "host_permissions": ["*://*/*"],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting",
+    "storage",
+    "notifications",
+    "alarms"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
