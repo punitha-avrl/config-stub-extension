@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call-IA Config Stub</title>
+    <script src="popup.js"></script>
+    <style>
+      body {
+        min-width: 400px;
+        padding: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      input {
+        width: calc(100% - 16px);
+        padding: 8px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        color: white;
+        padding: 5px 10px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      #save-btn {
+        background-color: #4caf50;
+      }
+      #save-btn:hover {
+        background-color: #45a049;
+      }
+      .btn-danger {
+        background-color: #f44336;
+      }
+      .btn-danger:hover {
+        background-color: #da190b;
+      }
+      label {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="tree">Cachet tree</label>
+    <input type="text" id="tree" />
+    <label for="ticket-id">Ticket-id</label>
+    <input type="text" id="ticket-id" />
+    <button id="save-btn">Save</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Ticket-id</th>
+          <th>Trees in Stub Config</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
