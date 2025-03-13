@@ -101,7 +101,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 
 
-const supergen_eng=["amannagle@avrl.io","kartikkoul@avrl.io","rishabh@avrl.io","rohit@avrl.io","shivani@avrl.io","vardhaman@avrl.io"]
+const supergen_eng=["amannagle@avrl.io","kartikkoul@avrl.io","rishabh@avrl.io","rohit@avrl.io","shivani@avrl.io","shubhamprakash@avrl.io","vardhaman@avrl.io"]
 
 const supergen_eng_ele=document.createElement("div");
 const table=document.createElement("table");
